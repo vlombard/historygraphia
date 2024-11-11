@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/hsg/narration"
+     xml:base="http://purl.org/hsg/narration"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/hsg/narration">
+        <owl:versionIRI rdf:resource="http://purl.org/hsg/narration/0.9.1.3"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/hsg/hsg#has_slot -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/hsg#has_slot"/>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_author-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_author-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su colui che realizza l’oggetto</rdfs:comment>
+        <rdfs:label xml:lang="en">author paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo autore</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_chronology-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_chronology-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su data o intervallo di tempo dei temi trattati nella narrazione</rdfs:comment>
+        <rdfs:label xml:lang="en">chronology paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo cronologia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_circulation-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_circulation-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su area di attività  di un artista (architetto, pittore, scultore…), di una bottega, di una maestranza; di un modello decorativo o di una tipologia architettonica</rdfs:comment>
+        <rdfs:label xml:lang="en">circulation paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo circolazione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_commissioning-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_commissioning-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su attività di chi richiede l’esecuzione di un lavoro (opera d’arte, manufatto artigianale, opera in muratura….) o la fornitura di una merce</rdfs:comment>
+        <rdfs:label xml:lang="en">commissioning paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo committenza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_context-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_context-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su complesso di fatti e circostanze entro cui si colloca l’oggetto della narrazione (contesto economico, politico, contesto artistico….)</rdfs:comment>
+        <rdfs:label xml:lang="en">context paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo contesto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_function-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_function-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo sul ruolo dell’oggetto della narrazione in relazione agli eventi e alle situazioni</rdfs:comment>
+        <rdfs:label xml:lang="en">function paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo funzione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_location-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_location-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su luogo e area in cui si svolgono i temi trattati dalla narrazione</rdfs:comment>
+        <rdfs:label xml:lang="en">location paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo località</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_narrator-f -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_narrator-f">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_story_fragment"/>
+        <rdfs:comment xml:lang="it">frammento che riporta il narratore</rdfs:comment>
+        <rdfs:label xml:lang="it">frammento narratore</rdfs:label>
+        <rdfs:label xml:lang="en">narrator fragment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_object_description-p -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_object_description-p">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo su descrizione delle caratteristiche tipologiche e formali di un oggetto e della sua iconografia</rdfs:comment>
+        <rdfs:label xml:lang="en">object description paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo descrizione oggetto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_paragraph -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_paragraph">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/hsg#has_slot"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_story_fragment"/>
+        <rdfs:comment xml:lang="it">paragrafo che riporta un riferimento bibiografico</rdfs:comment>
+        <rdfs:label xml:lang="en">article paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">paragrafo saggio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_source_reference-f -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_source_reference-f">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_story_fragment"/>
+        <rdfs:comment xml:lang="it">frammento che riporta un riferimento bibliografico</rdfs:comment>
+        <rdfs:label xml:lang="it">frammento riferimento fonte</rdfs:label>
+        <rdfs:label xml:lang="en">source reference fragment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_story_fragment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_story_fragment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="it">ha come suo frammento narrativo</rdfs:comment>
+        <rdfs:label xml:lang="it">frammento di narrazione</rdfs:label>
+        <rdfs:label xml:lang="en">story fragment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_style_analysis -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/hsg/narration#has_style_analysis">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/hsg/narration#has_paragraph"/>
+        <rdfs:comment xml:lang="it">paragrafo che descrive gli elementi formali che permettono di definire un autore, un ambito o un’epoca</rdfs:comment>
+        <rdfs:label xml:lang="it">paragrafo analisi stilistica</rdfs:label>
+        <rdfs:label xml:lang="en">style analysis paragraph</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_discipline -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/hsg/narration#has_discipline">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>altro</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>antropologia</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>geografia</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>storia</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>storia dell&apos;architettura</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>storia dell&apos;arte</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Area disciplinare della narrazione (storia, storia dell&apos;arte, storia dell&apos;architettura, antropologia, linguistica, geografia).</rdfs:comment>
+        <rdfs:label xml:lang="it">disciplina</rdfs:label>
+        <rdfs:label xml:lang="en">discipline</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_text -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/hsg/narration#has_text">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/bibo/content"/>
+        <rdfs:comment xml:lang="it">testo vero e proprio (di paragrafo, di iscrizione, ...)</rdfs:comment>
+        <rdfs:label xml:lang="it">testo</rdfs:label>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#has_title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/hsg/narration#has_title">
+        <rdfs:comment xml:lang="it">Titolo del saggio o di una sua sezione</rdfs:comment>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:label xml:lang="it">titolo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/hsg/narration#pivot -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/hsg/narration#pivot">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="it">Indica se un paragrafo è perno di una narrazione</rdfs:comment>
+        <rdfs:label xml:lang="it">perno</rdfs:label>
+        <rdfs:label xml:lang="en">pivot</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/content -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/content"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/hsg/hsg#List -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/hsg#List"/>
+    
+
+
+    <!-- http://purl.org/hsg/hsg#List_slot -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/hsg#List_slot"/>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Article -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Article">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/hsg#List"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration"/>
+        <rdfs:comment xml:lang="it">Narrazione lineare suddivisa in paragrafi, avente un oggetto come argomento.</rdfs:comment>
+        <rdfs:label xml:lang="en">Article</rdfs:label>
+        <rdfs:label xml:lang="it">Saggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Article_paragraph -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Article_paragraph">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/hsg#List_slot"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration_f"/>
+        <rdfs:comment xml:lang="it">Paragrafo di un saggio lineare</rdfs:comment>
+        <rdfs:label xml:lang="en">Article paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Saggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Author-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Author-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla di colui che realizza l’oggetto della narrazione</rdfs:comment>
+        <rdfs:label xml:lang="en">Author paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Autore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Chronology-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Chronology-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla di data o intervallo di tempo dei temi trattati nella narrazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chronology paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Cronologia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Circulation-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Circulation-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla dell’area di attività  di un artista (architetto, pittore, scultore…), di una bottega, di una maestranza; di un modello decorativo o di una tipologia architettonica</rdfs:comment>
+        <rdfs:label xml:lang="en">Circulation paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Circolazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Commissioning-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Commissioning-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla dell&apos;attività di chi richiede l’esecuzione di un lavoro (opera d’arte, manufatto artigianale, opera in muratura….) o la fornitura di una merce</rdfs:comment>
+        <rdfs:label xml:lang="en">Commissioning paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Committenza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Context-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Context-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla del complesso di fatti e circostanze entro cui si colloca l’oggetto della narrazione (contesto economico, politico, contesto artistico….)</rdfs:comment>
+        <rdfs:label xml:lang="en">Context paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Contesto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Data_visualization -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Data_visualization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration"/>
+        <rdfs:comment xml:lang="it">Visualizzazione grafica di dati</rdfs:comment>
+        <rdfs:label xml:lang="en">Data visualization</rdfs:label>
+        <rdfs:label xml:lang="it">Visualizzazione dati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Function-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Function-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla del ruolo dell’oggetto della narrazione in relazione agli eventi e alle situazioni</rdfs:comment>
+        <rdfs:label xml:lang="en">Function paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Funzione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Location-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Location-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla del luogo o area in cui si svolge il contenuto della narrazione</rdfs:comment>
+        <rdfs:label xml:lang="en">Location paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Località</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Map -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Map">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration"/>
+        <rdfs:comment xml:lang="it">Carta tematica annotata</rdfs:comment>
+        <rdfs:label xml:lang="en">Map</rdfs:label>
+        <rdfs:label xml:lang="it">Mappa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Narration -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Narration">
+        <rdfs:label xml:lang="en">Narration</rdfs:label>
+        <rdfs:label xml:lang="it">Narrazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Narration_f -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Narration_f">
+        <rdfs:comment xml:lang="it">Frammento in cui si scompone una narrazione (livelli tematica di una carta, paragrafi di un saggio, ...)</rdfs:comment>
+        <rdfs:label xml:lang="it">Frammento di narrazione</rdfs:label>
+        <rdfs:label xml:lang="en">Narration fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Narrator-f -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Narrator-f">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration_f"/>
+        <rdfs:comment xml:lang="it">Il narratore, di solito il nome, ma anche Bio, Foto, ... .</rdfs:comment>
+        <rdfs:label xml:lang="it">Frammento Narratore</rdfs:label>
+        <rdfs:label xml:lang="en">Narrator fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Object_description-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Object_description-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che descrive le caratteristiche tipologiche e formali dell&apos;oggetto della narrazione e della sua iconografia</rdfs:comment>
+        <rdfs:label xml:lang="en">Object description paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Paragrafo Descrizione oggetto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Source_reference-f -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Source_reference-f">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Narration_f"/>
+        <rdfs:comment xml:lang="it">Frammento che rappresenta un riferimento a una fonte bibliografica.</rdfs:comment>
+        <rdfs:label xml:lang="it">Frammento Riferimento fonte</rdfs:label>
+        <rdfs:label xml:lang="en">Source reference fragment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/hsg/narration#Style_analysis-p -->
+
+    <owl:Class rdf:about="http://purl.org/hsg/narration#Style_analysis-p">
+        <rdfs:subClassOf rdf:resource="http://purl.org/hsg/narration#Article_paragraph"/>
+        <rdfs:comment xml:lang="it">Paragrafo che parla degli  elementi formali che permettono di definire un autore, un ambito o un’epoca</rdfs:comment>
+        <rdfs:label xml:lang="it">Paragrafo Analisi stilistica</rdfs:label>
+        <rdfs:label xml:lang="en">Style analysis paragraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#index">
+        <rdfs:label xml:lang="it">indice</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#length">
+        <rdfs:label xml:lang="it">lunghezza</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#next">
+        <rdfs:comment xml:lang="it">Prossimo elemento in un elenco</rdfs:comment>
+        <rdfs:label xml:lang="it">prossimo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#ordered_list">
+        <rdfs:comment xml:lang="it">L&apos;elenco di cui fa parte un elemento</rdfs:comment>
+        <rdfs:label xml:lang="it">in elenco</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/olo/core#previous">
+        <rdfs:comment xml:lang="it">L&apos;elemento precedente dell&apos;elenco</rdfs:comment>
+        <rdfs:label xml:lang="it">precedente</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

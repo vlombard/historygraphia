@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/hsg/source"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/hsg/source"
+     versionIRI="http://purl.org/hsg/source/0.9.1.2">
+    <Prefix name="" IRI="http://purl.org/hsg/source"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudiovisualDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generic_source"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webpage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Webpage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_caption"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_url"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Article"/>
+        <Class IRI="http://purl.org/ontology/bibo/Article"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AudiovisualDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Book"/>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Chapter"/>
+        <Class IRI="http://purl.org/ontology/bibo/Chapter"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Collection"/>
+        <Class IRI="http://purl.org/ontology/bibo/Collection"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Generic_source"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Image"/>
+        <Class IRI="http://purl.org/ontology/bibo/Image"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Manuscript"/>
+        <Class IRI="http://purl.org/ontology/bibo/Manuscript"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Map"/>
+        <Class IRI="http://purl.org/ontology/bibo/Map"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Webpage"/>
+        <Class IRI="http://purl.org/ontology/bibo/Webpage"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AudiovisualDocument"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chapter"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collection"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manuscript"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Map"/>
+        <Class IRI="#Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webpage"/>
+        <Class IRI="#Generic_source"/>
+    </SubClassOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="it">Saggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AudiovisualDocument</IRI>
+        <Literal xml:lang="it">Documento audiovisivo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Book</IRI>
+        <Literal xml:lang="it">Libro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chapter</IRI>
+        <Literal xml:lang="it">Capitolo di libro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collection</IRI>
+        <Literal xml:lang="it">Una raccolta di documenti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Collection</IRI>
+        <Literal xml:lang="en">Collecion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Collection</IRI>
+        <Literal xml:lang="it">Raccolta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Generic_source</IRI>
+        <Literal xml:lang="it">Fonte bibliografica generica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Generic_source</IRI>
+        <Literal xml:lang="it">Fonte generica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Generic_source</IRI>
+        <Literal xml:lang="en">Generic source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Image</IRI>
+        <Literal xml:lang="it">Immagine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manuscript</IRI>
+        <Literal xml:lang="it">Manoscritto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Map</IRI>
+        <Literal xml:lang="it">Cartina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Webpage</IRI>
+        <Literal xml:lang="it">Pagina web</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_caption</IRI>
+        <Literal xml:lang="it">didascalia, il testo vero e proprio (di immagine o schema riportati in un testo)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_caption</IRI>
+        <Literal xml:lang="en">caption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_caption</IRI>
+        <Literal xml:lang="it">didascalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_url</IRI>
+        <Literal xml:lang="it">URL (http:// ...) associata con una fonte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_url</IRI>
+        <Literal xml:lang="en">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_url</IRI>
+        <Literal xml:lang="it">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#index</IRI>
+        <Literal xml:lang="it">indice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#length</IRI>
+        <Literal xml:lang="it">lunghezza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#next</IRI>
+        <Literal xml:lang="it">Prossimo elemento in un elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#next</IRI>
+        <Literal xml:lang="it">prossimo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#ordered_list</IRI>
+        <Literal xml:lang="it">L&apos;elenco di cui fa parte un elemento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#ordered_list</IRI>
+        <Literal xml:lang="it">in elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#previous</IRI>
+        <Literal xml:lang="it">L&apos;elemento precedente dell&apos;elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#previous</IRI>
+        <Literal xml:lang="it">precedente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#slot</IRI>
+        <Literal xml:lang="it">Un elemento di un elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#slot</IRI>
+        <Literal xml:lang="it">elemento elenco</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

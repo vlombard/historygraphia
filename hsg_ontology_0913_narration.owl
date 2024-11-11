@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/hsg/narration"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/hsg/narration"
+     versionIRI="http://purl.org/hsg/narration/0.9.1.3">
+    <Prefix name="" IRI="http://purl.org/hsg/narration"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://purl.org/hsg/hsg#List"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/hsg/hsg#List_slot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article_paragraph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chronology-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circulation-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commissioning-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_visualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narration_f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrator-f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object_description-p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Source_reference-f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Style_analysis-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/hsg/hsg#has_slot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_author-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_chronology-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_circulation-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_commissioning-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_context-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_function-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_location-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_narrator-f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_object_description-p"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_source_reference-f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_story_fragment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_style_analysis"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_discipline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_text"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pivot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/ontology/bibo/content"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="http://purl.org/hsg/hsg#List"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#Narration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article_paragraph"/>
+        <Class IRI="http://purl.org/hsg/hsg#List_slot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article_paragraph"/>
+        <Class IRI="#Narration_f"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Author-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chronology-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circulation-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commissioning-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Context-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_visualization"/>
+        <Class IRI="#Narration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Map"/>
+        <Class IRI="#Narration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narrator-f"/>
+        <Class IRI="#Narration_f"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object_description-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Source_reference-f"/>
+        <Class IRI="#Narration_f"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Style_analysis-p"/>
+        <Class IRI="#Article_paragraph"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_author-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_chronology-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_circulation-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_commissioning-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_context-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_function-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_location-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_narrator-f"/>
+        <ObjectProperty IRI="#has_story_fragment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_object_description-p"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_paragraph"/>
+        <ObjectProperty IRI="http://purl.org/hsg/hsg#has_slot"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_paragraph"/>
+        <ObjectProperty IRI="#has_story_fragment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_source_reference-f"/>
+        <ObjectProperty IRI="#has_story_fragment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_story_fragment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_style_analysis"/>
+        <ObjectProperty IRI="#has_paragraph"/>
+    </SubObjectPropertyOf>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#has_text"/>
+        <DataProperty IRI="http://purl.org/ontology/bibo/content"/>
+    </EquivalentDataProperties>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pivot"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pivot"/>
+        <Class IRI="#Article_paragraph"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_discipline"/>
+        <DataOneOf>
+            <Literal>altro</Literal>
+            <Literal>antropologia</Literal>
+            <Literal>geografia</Literal>
+            <Literal>storia</Literal>
+            <Literal>storia dell&apos;architettura</Literal>
+            <Literal>storia dell&apos;arte</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pivot"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="it">Narrazione lineare suddivisa in paragrafi, avente un oggetto come argomento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="en">Article</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="it">Saggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Article_paragraph</IRI>
+        <Literal xml:lang="it">Paragrafo di un saggio lineare</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article_paragraph</IRI>
+        <Literal xml:lang="en">Article paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article_paragraph</IRI>
+        <Literal xml:lang="it">Paragrafo Saggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Author-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla di colui che realizza l’oggetto della narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Author-p</IRI>
+        <Literal xml:lang="en">Author paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Author-p</IRI>
+        <Literal xml:lang="it">Paragrafo Autore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chronology-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla di data o intervallo di tempo dei temi trattati nella narrazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chronology-p</IRI>
+        <Literal xml:lang="en">Chronology paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Chronology-p</IRI>
+        <Literal xml:lang="it">Paragrafo Cronologia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Circulation-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla dell’area di attività  di un artista (architetto, pittore, scultore…), di una bottega, di una maestranza; di un modello decorativo o di una tipologia architettonica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Circulation-p</IRI>
+        <Literal xml:lang="en">Circulation paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Circulation-p</IRI>
+        <Literal xml:lang="it">Paragrafo Circolazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Commissioning-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla dell&apos;attività di chi richiede l’esecuzione di un lavoro (opera d’arte, manufatto artigianale, opera in muratura….) o la fornitura di una merce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Commissioning-p</IRI>
+        <Literal xml:lang="en">Commissioning paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Commissioning-p</IRI>
+        <Literal xml:lang="it">Paragrafo Committenza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Context-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla del complesso di fatti e circostanze entro cui si colloca l’oggetto della narrazione (contesto economico, politico, contesto artistico….)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Context-p</IRI>
+        <Literal xml:lang="en">Context paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Context-p</IRI>
+        <Literal xml:lang="it">Paragrafo Contesto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_visualization</IRI>
+        <Literal xml:lang="it">Visualizzazione grafica di dati</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data_visualization</IRI>
+        <Literal xml:lang="en">Data visualization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Data_visualization</IRI>
+        <Literal xml:lang="it">Visualizzazione dati</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Function-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla del ruolo dell’oggetto della narrazione in relazione agli eventi e alle situazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Function-p</IRI>
+        <Literal xml:lang="en">Function paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Function-p</IRI>
+        <Literal xml:lang="it">Paragrafo Funzione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla del luogo o area in cui si svolge il contenuto della narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location-p</IRI>
+        <Literal xml:lang="en">Location paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location-p</IRI>
+        <Literal xml:lang="it">Paragrafo Località</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Map</IRI>
+        <Literal xml:lang="it">Carta tematica annotata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Map</IRI>
+        <Literal xml:lang="en">Map</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Map</IRI>
+        <Literal xml:lang="it">Mappa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narration</IRI>
+        <Literal xml:lang="en">Narration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narration</IRI>
+        <Literal xml:lang="it">Narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Narration_f</IRI>
+        <Literal xml:lang="it">Frammento in cui si scompone una narrazione (livelli tematica di una carta, paragrafi di un saggio, ...)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narration_f</IRI>
+        <Literal xml:lang="it">Frammento di narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narration_f</IRI>
+        <Literal xml:lang="en">Narration fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Narrator-f</IRI>
+        <Literal xml:lang="it">Il narratore, di solito il nome, ma anche Bio, Foto, ... .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narrator-f</IRI>
+        <Literal xml:lang="it">Frammento Narratore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Narrator-f</IRI>
+        <Literal xml:lang="en">Narrator fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Object_description-p</IRI>
+        <Literal xml:lang="it">Paragrafo che descrive le caratteristiche tipologiche e formali dell&apos;oggetto della narrazione e della sua iconografia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Object_description-p</IRI>
+        <Literal xml:lang="en">Object description paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Object_description-p</IRI>
+        <Literal xml:lang="it">Paragrafo Descrizione oggetto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Source_reference-f</IRI>
+        <Literal xml:lang="it">Frammento che rappresenta un riferimento a una fonte bibliografica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Source_reference-f</IRI>
+        <Literal xml:lang="it">Frammento Riferimento fonte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Source_reference-f</IRI>
+        <Literal xml:lang="en">Source reference fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Style_analysis-p</IRI>
+        <Literal xml:lang="it">Paragrafo che parla degli  elementi formali che permettono di definire un autore, un ambito o un’epoca</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Style_analysis-p</IRI>
+        <Literal xml:lang="it">Paragrafo Analisi stilistica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Style_analysis-p</IRI>
+        <Literal xml:lang="en">Style analysis paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_author-p</IRI>
+        <Literal xml:lang="it">paragrafo su colui che realizza l’oggetto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_author-p</IRI>
+        <Literal xml:lang="en">author paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_author-p</IRI>
+        <Literal xml:lang="it">paragrafo autore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_chronology-p</IRI>
+        <Literal xml:lang="it">paragrafo su data o intervallo di tempo dei temi trattati nella narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_chronology-p</IRI>
+        <Literal xml:lang="en">chronology paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_chronology-p</IRI>
+        <Literal xml:lang="it">paragrafo cronologia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_circulation-p</IRI>
+        <Literal xml:lang="it">paragrafo su area di attività  di un artista (architetto, pittore, scultore…), di una bottega, di una maestranza; di un modello decorativo o di una tipologia architettonica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_circulation-p</IRI>
+        <Literal xml:lang="en">circulation paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_circulation-p</IRI>
+        <Literal xml:lang="it">paragrafo circolazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_commissioning-p</IRI>
+        <Literal xml:lang="it">paragrafo su attività di chi richiede l’esecuzione di un lavoro (opera d’arte, manufatto artigianale, opera in muratura….) o la fornitura di una merce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_commissioning-p</IRI>
+        <Literal xml:lang="en">commissioning paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_commissioning-p</IRI>
+        <Literal xml:lang="it">paragrafo committenza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_context-p</IRI>
+        <Literal xml:lang="it">paragrafo su complesso di fatti e circostanze entro cui si colloca l’oggetto della narrazione (contesto economico, politico, contesto artistico….)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_context-p</IRI>
+        <Literal xml:lang="en">context paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_context-p</IRI>
+        <Literal xml:lang="it">paragrafo contesto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_discipline</IRI>
+        <Literal xml:lang="it">Area disciplinare della narrazione (storia, storia dell&apos;arte, storia dell&apos;architettura, antropologia, linguistica, geografia).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_discipline</IRI>
+        <Literal xml:lang="it">disciplina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_discipline</IRI>
+        <Literal xml:lang="en">discipline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_function-p</IRI>
+        <Literal xml:lang="it">paragrafo sul ruolo dell’oggetto della narrazione in relazione agli eventi e alle situazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_function-p</IRI>
+        <Literal xml:lang="en">function paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_function-p</IRI>
+        <Literal xml:lang="it">paragrafo funzione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_location-p</IRI>
+        <Literal xml:lang="it">paragrafo su luogo e area in cui si svolgono i temi trattati dalla narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_location-p</IRI>
+        <Literal xml:lang="en">location paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_location-p</IRI>
+        <Literal xml:lang="it">paragrafo località</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_narrator-f</IRI>
+        <Literal xml:lang="it">frammento che riporta il narratore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_narrator-f</IRI>
+        <Literal xml:lang="it">frammento narratore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_narrator-f</IRI>
+        <Literal xml:lang="en">narrator fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_object_description-p</IRI>
+        <Literal xml:lang="it">paragrafo su descrizione delle caratteristiche tipologiche e formali di un oggetto e della sua iconografia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_object_description-p</IRI>
+        <Literal xml:lang="en">object description paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_object_description-p</IRI>
+        <Literal xml:lang="it">paragrafo descrizione oggetto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_paragraph</IRI>
+        <Literal xml:lang="it">paragrafo che riporta un riferimento bibiografico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_paragraph</IRI>
+        <Literal xml:lang="en">article paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_paragraph</IRI>
+        <Literal xml:lang="it">paragrafo saggio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_source_reference-f</IRI>
+        <Literal xml:lang="it">frammento che riporta un riferimento bibliografico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_source_reference-f</IRI>
+        <Literal xml:lang="it">frammento riferimento fonte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_source_reference-f</IRI>
+        <Literal xml:lang="en">source reference fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_story_fragment</IRI>
+        <Literal xml:lang="it">ha come suo frammento narrativo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_story_fragment</IRI>
+        <Literal xml:lang="it">frammento di narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_story_fragment</IRI>
+        <Literal xml:lang="en">story fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_style_analysis</IRI>
+        <Literal xml:lang="it">paragrafo che descrive gli elementi formali che permettono di definire un autore, un ambito o un’epoca</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_style_analysis</IRI>
+        <Literal xml:lang="it">paragrafo analisi stilistica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_style_analysis</IRI>
+        <Literal xml:lang="en">style analysis paragraph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_text</IRI>
+        <Literal xml:lang="it">testo vero e proprio (di paragrafo, di iscrizione, ...)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_text</IRI>
+        <Literal xml:lang="it">testo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_text</IRI>
+        <Literal xml:lang="en">text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_title</IRI>
+        <Literal xml:lang="it">Titolo del saggio o di una sua sezione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_title</IRI>
+        <Literal xml:lang="en">title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_title</IRI>
+        <Literal xml:lang="it">titolo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pivot</IRI>
+        <Literal xml:lang="it">Indica se un paragrafo è perno di una narrazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pivot</IRI>
+        <Literal xml:lang="it">perno</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pivot</IRI>
+        <Literal xml:lang="en">pivot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#index</IRI>
+        <Literal xml:lang="it">indice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#length</IRI>
+        <Literal xml:lang="it">lunghezza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#next</IRI>
+        <Literal xml:lang="it">Prossimo elemento in un elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#next</IRI>
+        <Literal xml:lang="it">prossimo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#ordered_list</IRI>
+        <Literal xml:lang="it">L&apos;elenco di cui fa parte un elemento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#ordered_list</IRI>
+        <Literal xml:lang="it">in elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/olo/core#previous</IRI>
+        <Literal xml:lang="it">L&apos;elemento precedente dell&apos;elenco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/ontology/olo/core#previous</IRI>
+        <Literal xml:lang="it">precedente</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
